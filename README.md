@@ -1,5 +1,5 @@
 # Technical-Documentation-Page
-FreeCodeCamp Responsive Web Design Projects
+<a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page"> FreeCodeCamp Responsive Web Design Projects</a>
 
 User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
@@ -31,4 +31,3 @@ User Story #14: On regular sized devices (laptops, desktops), the element with i
 
 User Story #15: My Technical Documentation page should use at least one media query.
 
-https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
