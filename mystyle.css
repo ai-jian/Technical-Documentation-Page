@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.7;
+  background: #e7e6dc;
+}
+
+#navbar {
+  padding: 1em 2em;
+  min-width: 25vw;
+  position: fixed;
+  height: 100%;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 20px 20px 0;
+  background-color: rgba(255, 255, 255, 0.125);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .collapsible {
+  display: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+#navbar header {
+  font-size: large;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  max-width: 20vw;
+  font-size: 1.2rem;
+  padding: 1em 0;
+}
+
+#navbar ul li:hover {
+  border-bottom: 5px solid rgba(35, 35, 241, 0.63);
+}
+
+#navbar ul li:hover a {
+  color: rgba(35, 35, 241, 0.63);
+}
+
+main {
+  position: absolute;
+  left: 30%;
+  margin: 2em 3em;
+}
+
+main header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main section {
+  padding: 1em 0;
+  border-top: 1px dashed rgba(199, 179, 179, 0.705);
+}
+
+main #A_high-level_definition {
+  border-top: none;
+  padding-top: 0%;
+}
+
+main code,
+main var,
+main .egBox {
+  background-color: rgba(240, 240, 237, 0.975);
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+}
+
+main .egBox {
+  border-radius: 10px;
+}
+
+main #Reference {
+  padding-bottom: 5em;
+}
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    position: unset;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  #navbar .collapsible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  #navbar .collapsible:hover {
+    color: rgba(35, 35, 241, 0.63);
+  }
+  #navbar .content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+  }
+  #navbar ul {
+    padding: 0;
+    width: 100%;
+    background-color: rgba(194, 194, 194, 0.612);
+  }
+  #navbar ul li {
+    max-width: 100%;
+    text-align: center;
+    padding: 0.6em;
+  }
+  main {
+    position: unset;
+  }
+}
+/*# sourceMappingURL=mystyle.css.map */
